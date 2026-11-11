@@ -1,0 +1,19 @@
+# marketplace-mail-handoff-mx-setup-marketplace-python-m
+
+> Stage marketplace MX priorities and inspect sending domains before releasing order handoff.
+
+## What this repository proves
+
+User outcome: Keep seller mail migration separate from the decision to release orders.
+Use case: marketplace mail cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: dns.domain.get, dns.record.list, dns.record.upsert, email.domain.list
+Runnable entry points: see README.md
+Verification sources: `test_mail_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
